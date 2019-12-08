@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+    <div class="main">
+        <h1>TO-DO LIST</h1>
+        <form id="form" action="index.html" method="post">
+            <input id='input' type="text" name="task">
+            <button type="submit" id="addButton"><strong>ADD</strong></button>
+        </form>
+        <div class="tasksBoard">
+            <ul class="tasksList">
+                <li><span class="delete">×</span><input type="checkbox"><label>Udělat úkoly</label></li>
+                <li><span class="delete">×</span><input type="checkbox"><label>Koupit pizzu</label></li>
+                <li><span class="delete">×</span><input type="checkbox"><label>Naprogramovat svůj web</label></li>
+                <li><span class="delete">×</span><input type="checkbox"><label>Zkusit Vue.js</label></li>
+            </ul>
+            <a id="clear">Clear</a>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
